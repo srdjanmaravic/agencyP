@@ -142,6 +142,7 @@ margin-top: 100px;
     background-size: cover;
     background-attachment: fixed;
     height: 70vh;
+    clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
 }
 #contact .row {
     height: 50vh;
@@ -173,4 +174,12 @@ margin-top: 100px;
     text-decoration:none;
     background: var(--orange);
     color: var(--black);
+}
+/* team */
+.carousel-caption {
+    background: var(--orange);
+    bottom: 80px;
+}
+#team .row {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
