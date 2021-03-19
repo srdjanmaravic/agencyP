@@ -15,3 +15,89 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
 }
+/* Nav */
+.navbar {
+    border-top: 5px solid var(--orange);
+    background: var(--black);
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand {
+    background: var(--orange);
+    padding: 15px 40px;
+    color: var(--bela);
+    text-shadow: 0 0 2px var(--black);
+    transition: var(--transition);
+}
+.navbar-brand:hover {
+    color: var(--black);
+    text-shadow: 0 0 2px var(--bela);
+}
+.navbar .nav-link {
+    color: var(--orange);
+    font-size: 20px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+.navbar .nav-link:hover {
+    color: var(--moka);
+}
+/* banner */
+#banner {
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url(img/banner.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#banner::after {
+    content: "";
+    width:100%;
+    height:100%;
+    position:absolute;
+    background:var(--black);
+    transform: skewY(10deg);
+    transform-origin: left bottom;
+    bottom: 0;
+    z-index: -1;
+}
+#banner .row {
+    height: 80vh;
+}
+#banner h2 {
+    color: var(--orange);
+    margin-bottom: 30px;
+}
+.bannerBtn {
+    text-decoration:none;
+    font-size: 20px;
+    padding: 15px 25px;
+    border: 2px solid var(--orange) ;
+    background:transparent;
+    text-transform: uppercase;
+    color: var(--bela);
+    margin: 0 10px;
+    transition: var(--transition);
+}
+.bannerBtn:hover {
+    text-decoration:none;
+    background: var(--orange);
+    color: var(--black);
+}
+/* BannerIcons */
+.bannerIcons {
+    margin-top: -100px;
+}
+.bannerIcons ul li {
+    background: var(--orange);
+    margin: 0 10px;
+    padding: 10px;
+    color: var(--bela);
+}
+.bannerIcons i {
+    font-size: 50px;
+    transition: var(--transition);
+}
+.bannerIcons i:hover {
+    color: var(--black);
+}
