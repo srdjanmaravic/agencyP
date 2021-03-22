@@ -9,6 +9,9 @@
     --black: #000;
     --transition: .4s ease;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -182,4 +185,163 @@ margin-top: 100px;
 }
 #team .row {
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+/* about */
+#about {
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(img/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0 200px 0;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+#about img {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#about .accordion > .card > .card-header {
+   background: var(--orange);
+   
+}
+#about .card {
+    border: 1px solid var(--black);
+}
+.btn-link {
+    color: var(--black);
+    font-size: 25px;
+}
+.btn-link:hover {
+    color: var(--bela);
+    text-decoration: none;
+}
+.btn-link::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0a4";
+}
+/* Project */
+#project {
+    padding-top: 50px;
+}
+#project .col-md-3 {
+    padding: 0 !important;
+}
+#project .imgContainer {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+    overflow: hidden;
+}
+#project .imgContainer img:hover {
+    opacity: .7;
+    cursor: pointer;
+    transition: var(--transition);
+}
+#project .imgIcons {
+    position: absolute;
+    bottom: -10rem;
+    background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7));
+    width:100%;
+    transition-duration: 1s;
+    text-align: center;
+    padding: 20px 0;
+}
+#project .imgContainer:hover .imgIcons {
+    bottom: 0;
+}
+#project i {
+    color: var(--orange);
+    font-size: 35px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+#project i:hover {
+    color: var(--siva);
+ 
+}
+/* People */
+#people img {
+    width: 80%;
+    border-radius: 50%;
+    margin: -100px auto 0 auto;
+}
+#people .row:nth-child(2) {
+    margin-top: 100px;
+}
+#people hr {
+    background: var(--orange);
+    border: none;
+    height: 1px;
+}
+#people i {
+    color: var(--orange);
+    font-size: 30px;
+    margin:0 5px;
+    transition: var(--transition);
+
+}
+#people i:hover{
+    color: var(--siva);
+}
+/* SKILLS */
+#skills {
+    background-image: linear-gradient(rgba(255, 138, 91,.7),rgba(255, 138, 91,.7)),url(img/progress.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0 100px 0;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+.progress-bar {
+    background-color: black;
+}
+/* Pricing */
+#pricing .card {
+    border-radius: 0;
+}
+#pricing .card-title {
+    padding-top: 20px;
+}
+.priceNum {
+    position: relative;
+    background: var(--moka);
+}
+.money {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 25px;
+}
+.moneyNum {
+    font-size: 60px;
+}
+.moneyEnd {
+    font-size: 18px;
+}
+#pricing .list-group li:first-child {
+    padding-top: 50px;
+}
+#pricing .list-group .list-group-item {
+    font-size: 15px;
+}
+#pricing .list-group {
+    border-radius: 0 !important;
+}
+#pricing .btn {
+    background: var(--orange);
+    border-radius: 0;
+}
+#pricing .btn:hover {
+    background: var(--siva);
+    color: var(--bela);
+}
+#pricing .action {
+    background: var(--orange);
+}
+/* Footer */
+footer {
+    color: var(--bela);
+    background: var(--black);
+}
+footer i, footer h2 {
+    color: var(--orange);
 }
